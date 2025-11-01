@@ -1,0 +1,298 @@
+# Medical Physics Deep Learning Project - .gitignore
+
+# =============================================================================
+# LARGE DATA FILES (CRITICAL - These are too large for GitHub)
+# =============================================================================
+# Dataset files
+Processed_Data/
+*.npz
+*.npy
+*.mat
+*.h5data
+*.hdf5data
+
+# Model weights and checkpoints (often 100MB+)
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+results/*/models/
+results_history/
+models/
+checkpoints/
+saved_models/
+weights/
+
+# =============================================================================
+# SYSTEM FILES
+# =============================================================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+desktop.ini
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# =============================================================================
+# MACHINE LEARNING / DEEP LEARNING
+# =============================================================================
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Tensorboard logs
+runs/
+logs/
+tb_logs/
+
+# DVC (Data Version Control)
+.dvc/
+
+# Experiment tracking
+experiments/
+outputs/
+
+# Cache directories
+.cache/
+cache/
+
+# Temporary ML files
+*.tmp
+*.temp
+*.out
+*.err
+
+# =============================================================================
+# IDE AND EDITORS
+# =============================================================================
+# VS Code
+.vscode/
+.history/
+
+# PyCharm
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# MEDICAL IMAGING SPECIFIC
+# =============================================================================
+# DICOM files (can be large)
+*.dcm
+*.dicom
+
+# NIfTI files (can be large)
+*.nii
+*.nii.gz
+
+# Medical image formats
+*.mha
+*.mhd
+*.nrrd
+
+# =============================================================================
+# CONFIGURATION AND SECRETS
+# =============================================================================
+# Configuration files
+config.ini
+secrets.json
+.env.local
+.env.production
+*.key
+
+# API keys and tokens
+.api_keys
+tokens.txt
+
+# =============================================================================
+# TEMPORARY AND BACKUP FILES
+# =============================================================================
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+
+# Log files
+*.log
+*.out
+*.err
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+# Results that are too large
+results/*/predictions/
+results/*/visualizations/
+
+# Data preprocessing intermediate files
+temp_data/
+intermediate/
+preprocessed/
+
+# Large output files
+output/
+exports/

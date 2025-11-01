@@ -1,2 +1,59 @@
 # U-Net-Project
+
 Advanced Radiation Therapy Class Project 2 - Lulin Yuan
+
+## Overview
+
+This project implements a U-Net architecture for medical image segmentation, specifically for radiation therapy applications.
+
+## Quick Start
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ArmorBearerSlave/U-Net-Project.git
+cd U-Net-Project
+```
+
+### 2. Set Up Data
+
+**Important:** Large datasets are not included in this repository. Please follow these steps:
+
+1. **Read the data setup guide:** See [DATA_SETUP.md](DATA_SETUP.md) for detailed instructions
+2. **Create data directory:** `mkdir -p data/{train,val,test}`
+3. **Add your data:** Either copy files or create symbolic links to your desktop data
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Verify Data Setup
+
+```bash
+python src/data_loader.py
+```
+
+## Project Structure
+
+```text
+U-Net-Project/
+├── src/                    # Python source code
+├── notebooks/              # Jupyter notebooks
+├── models/                 # Saved models (final model only)
+├── data/                   # Local data (gitignored)
+├── DATA_SETUP.md          # Data setup instructions
+└── README.md              # This file
+```
+
+## Working with Large Datasets
+
+This project is designed to work with large medical imaging datasets that shouldn't be uploaded to GitHub. The repository only contains:
+
+- Python source code
+- Documentation
+- Configuration files
+- Small example files (if any)
+
+Your large datasets should be stored locally in the `data/` directory, which is excluded from version control.
